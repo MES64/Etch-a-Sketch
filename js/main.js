@@ -23,7 +23,11 @@ function createGrid(squaresPerSide) {
 
 function colorIn(event) {
     const square = event.target;
-    square.style.backgroundColor = "black";
+    square.style.backgroundColor = `rgb(${random(256)}, ${random(256)}, ${random(256)})`;
+}
+
+function random(num) {
+    return Math.floor(Math.random() * num);
 }
 
 function getUserInput() {
