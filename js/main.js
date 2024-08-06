@@ -1,6 +1,7 @@
 "use strict";
 
 const container = document.querySelector(".container");
+container.addEventListener("mouseover", colorIn);
 const squaresPerSide = 16;
 
 for (let i=0; i<squaresPerSide; i++) {
@@ -12,4 +13,9 @@ for (let i=0; i<squaresPerSide; i++) {
         row.appendChild(square);
     }
     container.appendChild(row);
+}
+
+function colorIn(event) {
+    const square = event.target;
+    square.style.backgroundColor = "black";
 }
