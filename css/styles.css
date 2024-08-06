@@ -1,3 +1,22 @@
-body {
-    background-color: blue;
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: auto;
+    height: 80vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: auto;
+    flex: 1;
+    display: flex;
+}
+
+.square {
+    border: 1px solid black;
+    flex: 1;
 }
