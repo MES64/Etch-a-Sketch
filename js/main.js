@@ -24,6 +24,9 @@ function createGrid(squaresPerSide) {
 function colorIn(event) {
     const square = event.target;
     square.style.backgroundColor = `rgb(${random(256)}, ${random(256)}, ${random(256)})`;
+
+    const opacity = +square.style.opacity + 0.1;
+    square.style.opacity = opacity.toString();
 }
 
 function random(num) {
